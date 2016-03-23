@@ -1,0 +1,18 @@
+<html slick-uniqueid="3">
+    <head>
+        <meta charset="utf-8">
+        <title>Test yammer!</title>
+        <style type="text/css"></style>
+    </head>
+    <body cz-shortcut-listen="true">
+        <h1>Et coucou !</h1>
+        <script>
+            if (window.opener) {
+                console.log(window.opener);
+                //opener.document.getElementById('O365_MainLink_TenantLogoImg').src = 'http://www.mrsdarcy.fr/wp-content/uploads/2010/10/allez-les-verts.png';
+            } else {
+                document.querySelector('h1').innerHTML = 'The previous tab is safe and intact. <code>window.opener</code> was <code>null</code>; mischief <em>not</em> managed!';
+            }
+        </script>
+    </body>
+</html>
